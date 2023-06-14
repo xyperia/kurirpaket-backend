@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "5d886b43-b9c7-4003-846f-586f31de444f",
+		"name": "Tools",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15013002"
+	},
+	"item": [
+		{
+			"name": "Kurir Paket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PROTOCOL\": \"UDP\", // TCP or UDP\r\n    \"DESTINATION_IP\": \"10.30.100.8\",\r\n    \"DESTINATION_PORT\": \"10514\",\r\n    \"PACKET_BODY\": \"CEF:0|Kemp|LM|1.0|4|Connected|1|vs=10.35.46.235:443 event=Connected srcip=10.35.2.98 srcport=51675 dstip=172.20.0.129 dstport=80\"\r\n    // \"PACKET_BODY\": \"CEF:0|Kemp|LM|1.0|9|Access Denied|6|vs=10.35.46.252:443 event=Access Denied srcip=10.35.8.8 user=mohit@kempqaesp.net msg=denied access\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.8.95.23:3000",
+					"protocol": "http",
+					"host": [
+						"10",
+						"8",
+						"95",
+						"23"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		}
+	]
+}
